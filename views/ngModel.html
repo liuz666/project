@@ -1,0 +1,30 @@
+<nav class="nav navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <h2 class="text-center  text-primary">双向绑定数据</h2>
+        </div>
+        <div class="nav navbar-nav">
+
+        </div>
+    </div>
+</nav>
+<div class="container-fluid" style="margin-top:100px;">
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">姓名</span>
+        <input type="text" class="form-control" ng-model="name" placeholder="Username" aria-describedby="basic-addon1">
+    </div><br/>
+
+    <div class="alert alert-success text-center" role="alert">
+        <p>{{name}}</p>
+    </div><hr/>
+    <div >
+        <select ng-model="tup">
+            <option value="1.jpg">第一张</option>
+            <option value="2.jpg">第二张</option>
+        </select><br/><br/>
+        <div>
+            <img ng-src="img/{{tup}}" />
+        </div>
+    </div>
+</div>
+

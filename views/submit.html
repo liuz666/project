@@ -1,0 +1,93 @@
+<nav class="nav navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <h2 class="text-center  text-primary">指令的使用</h2>
+        </div>
+        <div  class="nav navbar-nav">
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="container" style="margin-top:100px;">
+    <ul id="myTab" class="row">
+        <li  ng-click="onClick('a')"> <button class="btn btn-block ">菜鸟教程</button></li>
+        <li  ng-click="onClick('b')"><button class="btn btn-blok">iOS</button></li>
+    </ul>
+    <div id="myTabContent" class="row">
+        <div class="add-label-pane " ng-class="{'active':click == 'a'}">
+            <p>菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。</p>
+        </div>
+        <div class="add-label-pane" ng-class="{'active':click == 'b'}">
+            <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 。</p>
+        </div>
+    </div>
+
+</div>
+
+<!--<table  class="table table-striped" >-->
+    <!--<thead>-->
+        <!--<tr>-->
+            <!-- -->
+            <!--<th>任务目标</th>-->
+            <!--<th>目标信息</th>-->
+            <!--<th>周期扫描时间</th>-->
+            <!--<th>增量扫描时间</th>-->
+            <!--<th>任务状态</th>-->
+           <!-- -->
+        <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody>-->
+        <!--<tr ng-if="!data && firstLoadingEnd">-->
+            <!--<td colspan="9" class="empty-table"><img src="" alt="">抱歉，没有找到结果。</td>-->
+        <!--</tr>-->
+        <!--<tr >-->
+            <!--<td>sss</td>-->
+            <!--<td>ssdfs</td>-->
+            <!--<td>ddd</td>-->
+            <!--<td>sss</td>-->
+            <!--<td >sss</td>-->
+            <!-- -->
+        <!--</tr>-->
+    <!--</tbody>-->
+<!--</table>-->
+<!--&lt;!&ndash;分页&ndash;&gt;-->
+<!--<div class="ng-table-pager clearfix" id="pagination">-->
+    <!--<div class="col-sm-3">-->
+        <!--<div class="btn-group">-->
+            <!--<button type="button" class="btn btn-default" ng-class="{'active': limitNum == 10}" ng-click="page.limit(10)">10</button>-->
+            <!--<button type="button" class="btn btn-default" ng-class="{'active': limitNum == 20}"  ng-click="page.limit(20)">20</button>-->
+            <!--<button type="button" class="btn btn-default" ng-class="{'active': limitNum == 50}"  ng-click="page.limit(50)">50</button>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm-6" align="center">-->
+        <!--<ul class="pagination">-->
+            <!--<li class="footable-page-arrow" ng-class="{'disabled':current==1}">-->
+                <!--<a ng-click="page.num(1)">«首页</a>-->
+            <!--</li>-->
+            <!--<li class="footable-page-arrow" ng-class="{'disabled':current<=1}">-->
+                <!--<a ng-click="page.num(current-1)">‹</a>-->
+            <!--</li>-->
+            <!--<li class="footable-page" ng-repeat="li in list" ng-class="{'active':current == li}">-->
+                <!--<a ng-click="page.num(li)">{{li}}</a>-->
+            <!--</li>-->
+            <!--<li class="footable-page-arrow" ng-class="{'disabled':current>=total}">-->
+                <!--<a ng-click="page.num(current+1)">›</a>-->
+            <!--</li>-->
+            <!--<li class="footable-page-arrow" ng-class="{'disabled':current==total}">-->
+                <!--<a ng-click="page.num(total)">尾页»</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="col-sm-3">-->
+        <!--<div class="total pull-right">-->
+            <!--<input id="input-jmppage" type="text" ng-model="anyPage" min="1">-->
+            <!--<span> / <b class="total-page">{{total}}</b></span>-->
+            <!--<button id="submit-jmppage" class="btn btn-info" ng-click="page.num(anyPage)">确定</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
